@@ -1,0 +1,209 @@
+@media(min-width: 1025px) {}
+
+.svg {
+  text-align: center;
+}
+
+.sign-in-form .sign-in-form-main {
+  background-image: url(https://member.crystalbaybooking.com/assets/images/bg-main-new.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-position: 0 50%;
+  min-height: calc(100vh - 87px);
+  padding-bottom: 4rem;
+}
+
+.sign-in-form .sign-in-form-main .page-heading {
+  font-size: 22px;
+  color: #3c3c3c;
+  margin-top: 36px;
+  margin-bottom: 0;
+  font-family: Candara,sans-serif;
+  text-align: center;
+}
+
+.sign-in-form .sign-in-form-main .page-brand {
+  font-size: 40px;
+  color: #125ab8;
+  font-weight: 500;
+  margin-bottom: 22px;
+  font-family: australia-title;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase!important;
+}
+
+.d-flex {
+  display: flex!important;
+}
+
+.flex-column {
+  flex-direction: column!important;
+}
+
+.input-group-block {
+  border: 1px solid #ccc;
+  text-align: left;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0 5px 0 #ccc;
+}
+
+.input-group-block label {
+  color: #125ab8;
+  margin-bottom: 2px;
+}
+
+label {
+  display: inline-block;
+}
+
+[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
+  touch-action: manipulation;
+}
+
+button, input {
+  overflow: visible;
+}
+
+.form-control {
+  font-size: 100%;
+}
+
+.input-border-none {
+  border: none!important;
+}
+
+.icon-mail {
+  display: block;
+  max-width:25px;
+  max-height:25px;
+  height: auto;
+  width: auto;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.icon-password {
+  display: block;
+  max-width:25px;
+  max-height:25px;
+  height: auto;
+  width: auto;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.row-actions {
+  margin-top: 30px;
+  text-align: center;
+  .r-a-b {
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+  }
+}
+
+.forger-password {
+  text-align: center;
+  margin-top: 20px;
+  .f-p {
+    color: white;
+    font-size: 15px;
+  }
+}
+
+.container-fluid {
+  background: linear-gradient(90deg,#002a86,#00a2ed);
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section {
+  display: block;
+}
+
+.py-2 {
+  padding-top: 0.5rem!important;
+  padding-bottom: 0.5rem!important;
+}
+
+.px-5 {
+  padding-right: 3rem!important;
+  padding-left: 3rem!important;
+}
+
+.align-items-center {
+  align-items: center!important;
+}
+
+.justify-content-between {
+  justify-content: space-between!important;
+}
+
+.justify-content-center {
+  justify-content: center!important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.container-fluid .box .second {
+  font-size: 11px;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.me-2 {
+  margin-right: 0.5rem!important;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+* {
+  font-family: Work Sans,sans-serif;
+  box-sizing: border-box;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.error-e-p {
+  margin-left: 10px;
+}
