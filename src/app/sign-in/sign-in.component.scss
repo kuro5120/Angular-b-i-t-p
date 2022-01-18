@@ -1,4 +1,8 @@
-@media(min-width: 1025px) {}
+@media screen and (max-width: 768px) {
+  .sign-in-form .sign-in-form-main .page-brand {
+    font-size: 76px;
+  }
+}
 
 .svg {
   text-align: center;
