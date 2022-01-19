@@ -109,9 +109,31 @@ button, input {
   margin-top: 30px;
   text-align: center;
   .r-a-b {
-    height: 40px;
-    width: 120px;
-    font-size: 15px;
+  border: none;
+  position: relative;
+  display: inline-block;
+  background-image: linear-gradient(42deg,#fff,#ccc);
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2rem;
+  overflow: hidden;
+  z-index: 0;
+  font-size: 20px;
+  padding: 0.8rem 4rem;
+  }
+
+  .r-a-b:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background-image: linear-gradient(90deg,#009ce9,#002581);
+    border-radius: 2rem;
+    box-sizing: border-box;
+    z-index: -1;
   }
 }
 
@@ -212,3 +234,4 @@ p {
   margin-top: 6px;
   margin-left: 10px;
 }
+
