@@ -42,11 +42,11 @@
                 #username="ngModel"
                 name="username"
                 class="form-control input-border-none ng-untouched ng-pristine ng-invalid">
-              <div class="error-e-p">
-                <mat-error *ngIf="username.touched && !username.valid">
-                  <span *ngIf="username.errors?.['email']">chỉ nhập email</span>
-                </mat-error>
-              </div>
+            </div>
+            <div class="error-e-p">
+              <mat-error *ngIf="username.touched && !username.valid">
+                <span *ngIf="username.errors?.['email']">chỉ nhập email</span>
+              </mat-error>
             </div>
           </div>
         </div>
@@ -68,14 +68,14 @@
                 #password="ngModel"
                 name="password"
                 class="form-control input-border-none ng-untouched ng-pristine ng-invalid">
-              <div class="error-e-p">
-                  <mat-error *ngIf="username.touched && !username.valid">
-                    <span *ngIf="password.errors?.['minlength']">mật khẩu ít nhất 8 kí tự</span>
-                    <span *ngIf="password.errors?.['pattern']">
-                      Ít nhất 1 chữ hoa và 1 số
-                    </span>
-                  </mat-error>
-              </div>
+            </div>
+            <div class="error-e-p">
+              <mat-error *ngIf="username.touched && !username.valid">
+                <span *ngIf="password.errors?.['minlength']">mật khẩu ít nhất 8 kí tự</span>
+                <span *ngIf="password.errors?.['pattern']">
+                  Ít nhất 1 chữ hoa và 1 số
+                </span>
+              </mat-error>
             </div>
           </div>
         </div>
