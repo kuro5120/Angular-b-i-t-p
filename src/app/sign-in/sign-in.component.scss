@@ -1,6 +1,12 @@
 @media screen and (max-width: 768px) {
+
   .sign-in-form .sign-in-form-main .page-brand {
     font-size: 76px;
+  }
+
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%;
   }
 }
 
@@ -83,6 +89,7 @@ button, input {
 
 .input-border-none {
   border: none!important;
+  outline:none;
 }
 
 .icon-mail {
@@ -235,3 +242,10 @@ p {
   margin-left: 10px;
 }
 
+.u-p-b {
+  width: 564.26px;
+}
+
+.brand-logo {
+  margin-top: 10px;
+}
