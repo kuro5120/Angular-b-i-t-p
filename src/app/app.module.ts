@@ -12,11 +12,23 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { FormsModule } from '@angular/forms';
+import { BookingComponent } from './booking/booking.component';
+import { BookingManagementComponent } from './booking-management/booking-management.component';
+import { AccountManagementComponent } from './account-management/account-management.component';
+import { CardComponent } from './card/card.component';
+import { MyCardComponent } from './my-card/my-card.component';
+import { ContractManagementComponent } from './contract-management/contract-management.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignInComponent
+    SignInComponent,
+    BookingComponent,
+    BookingManagementComponent,
+    AccountManagementComponent,
+    CardComponent,
+    MyCardComponent,
+    ContractManagementComponent
   ],
   imports: [
     BrowserModule,
