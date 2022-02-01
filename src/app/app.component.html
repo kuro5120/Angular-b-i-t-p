@@ -216,8 +216,75 @@
       </div>
     </div>
   </div>
-
 </header>
 
-<router-outlet></router-outlet>
+<div class="account-container">
+  <div class="container pb-3 d-flex">
+
+    <div class="page-menu mt-5 d-lg-block">
+      <ul class="mt-2r">
+
+        <li>
+          <a [routerLink]="['/account-management']" routerLinkActive="router-link-active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23.425" height="23.425" viewBox="0 0 23.425 23.425">
+              <path id="ic_account_circle_24px" d="M13.713,2A11.713,11.713,0,1,0,25.425,13.713,11.717,11.717,0,0,0,13.713,2Zm0,3.514A3.514,3.514,0,1,1,10.2,9.028,3.509,3.509,0,0,1,13.713,5.514Zm0,16.632a8.434,8.434,0,0,1-7.028-3.771c.035-2.331,4.685-3.608,7.028-3.608s6.992,1.277,7.028,3.608A8.434,8.434,0,0,1,13.713,22.146Z" transform="translate(-2 -2)" fill="#074494"/>
+            </svg>
+             Quản lý tài khoản
+          </a>
+        </li>
+
+        <li class="mt-2">
+          <a [routerLink]="['/contract-management']" routerLinkActive="router-link-active" class="color-black">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23.425" height="18.74" viewBox="0 0 23.425 18.74">
+              <path id="ic_payment_24px" d="M23.083,4H4.343A2.325,2.325,0,0,0,2.012,6.343L2,20.4A2.334,2.334,0,0,0,4.343,22.74h18.74A2.334,2.334,0,0,0,25.425,20.4V6.343A2.334,2.334,0,0,0,23.083,4Zm0,16.4H4.343V13.37h18.74Zm0-11.713H4.343V6.343h18.74Z" transform="translate(-2 -4)"/>
+            </svg>
+             Quản lý hợp đồng
+          </a>
+        </li>
+
+        <li class="mt-2">
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21.083" height="23.425" viewBox="0 0 21.083 23.425">
+              <path id="ic_event_24px" d="M19.4,13.884H13.541V19.74H19.4ZM18.227,1V3.343H8.856V1H6.514V3.343H5.343A2.332,2.332,0,0,0,3.012,5.685L3,22.083a2.342,2.342,0,0,0,2.343,2.343h16.4a2.349,2.349,0,0,0,2.343-2.343V5.685A2.349,2.349,0,0,0,21.74,3.343H20.569V1ZM21.74,22.083H5.343V9.2h16.4Z" transform="translate(-3 -1)"/>
+            </svg>
+             Quản lý sản phẩm
+          </a>
+        </li>
+
+        <li class="mt-2">
+          <a [routerLink]="['/booking-management']" routerLinkActive="router-link-active" class="color-black">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21.083" height="23.425" viewBox="0 0 21.083 23.425">
+              <path id="ic_event_24px" d="M19.4,13.884H13.541V19.74H19.4ZM18.227,1V3.343H8.856V1H6.514V3.343H5.343A2.332,2.332,0,0,0,3.012,5.685L3,22.083a2.342,2.342,0,0,0,2.343,2.343h16.4a2.349,2.349,0,0,0,2.343-2.343V5.685A2.349,2.349,0,0,0,21.74,3.343H20.569V1ZM21.74,22.083H5.343V9.2h16.4Z" transform="translate(-3 -1)"/>
+            </svg>
+             Quản lý đặt phòng
+          </a>
+        </li>
+
+        <li class="mt-2">
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21.083" height="23.425" viewBox="0 0 21.083 23.425">
+              <path id="ic_event_24px" d="M19.4,13.884H13.541V19.74H19.4ZM18.227,1V3.343H8.856V1H6.514V3.343H5.343A2.332,2.332,0,0,0,3.012,5.685L3,22.083a2.342,2.342,0,0,0,2.343,2.343h16.4a2.349,2.349,0,0,0,2.343-2.343V5.685A2.349,2.349,0,0,0,21.74,3.343H20.569V1ZM21.74,22.083H5.343V9.2h16.4Z" transform="translate(-3 -1)"/>
+            </svg>
+             Quản lý đơn hàng
+          </a>
+        </li>
+
+        <li class="mt-2">
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21.083" height="23.425" viewBox="0 0 21.083 23.425">
+              <path id="ic_event_24px" d="M19.4,13.884H13.541V19.74H19.4ZM18.227,1V3.343H8.856V1H6.514V3.343H5.343A2.332,2.332,0,0,0,3.012,5.685L3,22.083a2.342,2.342,0,0,0,2.343,2.343h16.4a2.349,2.349,0,0,0,2.343-2.343V5.685A2.349,2.349,0,0,0,21.74,3.343H20.569V1ZM21.74,22.083H5.343V9.2h16.4Z" transform="translate(-3 -1)"/>
+            </svg>
+             Yêu cầu/hỗ trợ
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="font-content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</div>
 

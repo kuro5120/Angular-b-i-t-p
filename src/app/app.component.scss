@@ -2,6 +2,10 @@
   .d-lg-flex {
     display: flex!important;
   }
+
+  .d-lg-block {
+    display: block!important;
+  }
 }
 
 .bg-white {
@@ -30,11 +34,6 @@
   .justify-content-end {
     justify-content: flex-end!important;
   }
-
-  .d-flex {
-    display: flex!important;
-  }
-
 }
 
 .menu {
@@ -75,6 +74,22 @@
   padding: 0!important;
 }
 
+.pb-3 {
+  padding-bottom: 1rem!important;
+}
+
+.mt-5 {
+  margin-top: 3rem!important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem!important;
+}
+
+.mt-2r {
+  margin-top: 2rem;
+}
+
 .color-black {
   color: #000;
 }
@@ -83,12 +98,37 @@
   font-weight: 700!important;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.d-flex {
+  display: flex!important;
+}
+
+.container, .container-fluid, .container-lg {
   width: 100%;
   padding-right: var(--bs-gutter-x,.75rem);
   padding-left: var(--bs-gutter-x,.75rem);
   margin-right: auto;
   margin-left: auto;
+}
+
+.account-container {
+  background-color: #f1f1f1;
+  min-height: calc(100% - 85px);
+  height: auto;
+
+  .page-menu {
+    min-width: 15rem;
+  }
+
+  .page-menu ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+}
+
+.font-content {
+  width: 100%;
+  overflow: auto;
 }
 
 .color-black {
@@ -108,3 +148,8 @@ a {
 * {
   font-family: Work Sans,sans-serif;
 }
+
+div {
+  display: block;
+}
+
