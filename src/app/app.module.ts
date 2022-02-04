@@ -18,6 +18,8 @@ import { AccountManagementComponent } from './account-management/account-managem
 import { CardComponent } from './card/card.component';
 import { MyCardComponent } from './my-card/my-card.component';
 import { ContractManagementComponent } from './contract-management/contract-management.component';
+import { NarbarComponent } from './menu/narbar/narbar.component';
+import { FooterComponent } from './menu/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ContractManagementComponent } from './contract-management/contract-mana
     AccountManagementComponent,
     CardComponent,
     MyCardComponent,
-    ContractManagementComponent
+    ContractManagementComponent,
+    NarbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
