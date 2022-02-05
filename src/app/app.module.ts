@@ -20,6 +20,7 @@ import { MyCardComponent } from './my-card/my-card.component';
 import { ContractManagementComponent } from './contract-management/contract-management.component';
 import { NarbarComponent } from './menu/narbar/narbar.component';
 import { FooterComponent } from './menu/footer/footer.component';
+import { NavlistComponent } from './menu/navlist/navlist.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './menu/footer/footer.component';
     MyCardComponent,
     ContractManagementComponent,
     NarbarComponent,
-    FooterComponent
+    FooterComponent,
+    NavlistComponent
   ],
   imports: [
     BrowserModule,

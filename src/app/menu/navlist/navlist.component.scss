@@ -1,0 +1,58 @@
+.account-container {
+  background-color: #f1f1f1;
+  min-height: calc(100% - 85px);
+  height: auto;
+
+  .page-menu {
+    min-width: 15rem;
+  }
+
+  .page-menu ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+}
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.link-active {
+  position: relative;
+  color: #006ec0!important;
+}
+
+.pb-3 {
+  padding-bottom: 1rem!important;
+}
+
+.mt-2r {
+  margin-top: 2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem!important;
+}
+
+a {
+  color: #074494;
+  text-decoration: none;
+  background-color: initial;
+  outline: none;
+  cursor: pointer;
+  transition: color .3s;
+  touch-action: manipulation;
+  display: inline-block;
+}
+
+.color-black {
+  color: black;
+}
+
+* {
+  font-family: Work Sans,sans-serif;
+}

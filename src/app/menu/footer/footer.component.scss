@@ -1,0 +1,56 @@
+.container-fluid {
+  background: linear-gradient(90deg,#002a86,#00a2ed);
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.justify-content-center {
+  justify-content: center!important;
+}
+
+.justify-content-between {
+  justify-content: space-between!important;
+}
+
+.align-items-center {
+  align-items: center!important;
+}
+
+.container-fluid .box .second {
+  font-size: 11px;
+}
+
+.d-flex {
+  display: flex!important;
+}
+
+.flex-column {
+  flex-direction: column!important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+* {
+  font-family: Work Sans,sans-serif;
+  box-sizing: border-box;
+}
+
+.px-5 {
+  padding-right: 3rem!important;
+  padding-left: 3rem!important;
+}
+
+.py-2 {
+  padding-top: 0.5rem!important;
+  padding-bottom: 0.5rem!important;
+}
+
+.color-white {
+  color: #fff;
+}
