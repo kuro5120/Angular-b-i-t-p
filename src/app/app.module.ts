@@ -21,6 +21,7 @@ import { ContractManagementComponent } from './contract-management/contract-mana
 import { NarbarComponent } from './menu/narbar/narbar.component';
 import { FooterComponent } from './menu/footer/footer.component';
 import { NavlistComponent } from './menu/navlist/navlist.component';
+import { MainMenuComponent } from './menu/main-menu/main-menu.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NavlistComponent } from './menu/navlist/navlist.component';
     ContractManagementComponent,
     NarbarComponent,
     FooterComponent,
-    NavlistComponent
+    NavlistComponent,
+    MainMenuComponent
   ],
   imports: [
     BrowserModule,

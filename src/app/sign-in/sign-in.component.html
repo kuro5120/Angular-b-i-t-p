@@ -1,5 +1,5 @@
 <div class = "main">
-  <form>
+  <form id="loginform" (ngSubmit)="onSubmit()" #loginform="ngForm">
     <div class="sign-in-form text-center position-relative">
       <div class = "sign-in-form-main">
         <svg class="brand-logo" id="Group_13076" data-name="Group 13076" xmlns="http://www.w3.org/2000/svg" width="center" height="110" viewBox="0 0 122 90.552" >
@@ -59,6 +59,7 @@
                 <path id="ic_vpn_key_24px" d="M12.65,10a6,6,0,1,0,0,4H17v4h4V14h2V10ZM7,14a2,2,0,1,1,2-2A2.006,2.006,0,0,1,7,14Z" transform="translate(-1 -6)" fill="#074494"/>
               </svg>
               <input
+                type="password"
                 matInput
                 required
                 minlength="8"
@@ -70,7 +71,7 @@
                 class="form-control input-border-none ng-untouched ng-pristine ng-invalid">
             </div>
             <div class="error-e-p">
-              <mat-error *ngIf="username.touched && !username.valid">
+              <mat-error>
                 <span *ngIf="password.errors?.['minlength']">mật khẩu ít nhất 8 kí tự</span>
                 <span *ngIf="password.errors?.['pattern']">
                   Ít nhất 1 chữ hoa và 1 số
@@ -81,7 +82,8 @@
         </div>
 
         <div class="row-actions">
-          <button mat-raised-button color="primary" type="submit" class="r-a-b">đăng nhập</button>
+          <button mat-raised-button color="primary" type="submit" class="r-a-b">
+            đăng nhập</button>
         </div>
 
         <div class="forger-password">

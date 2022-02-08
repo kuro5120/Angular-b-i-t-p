@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { from } from 'rxjs';
 
 @Component({
@@ -9,6 +10,12 @@ import { from } from 'rxjs';
 })
 export class SignInComponent implements OnInit {
 
+  @ViewChild('loginform')
+  loginform!:NgForm;
+
+  btndisabled = false;
+  url = 'http://localhost:4200/sign-in'
+
   userInfo = {
     userName: '',
     password: '',
@@ -17,13 +24,23 @@ export class SignInComponent implements OnInit {
 
   passwordPattern = /^(?=(.*[A-Z]){1,})(?=(.*[\d]){1,}).{8,}$/;
 
-  constructor() { }
+  constructor( private router: Router) {
+  }
 
   ngOnInit(): void {
   }
 
-  onSubmit(form: NgForm) {
-    console.log(form);
+  onSubmit() {
+    if (!this.loginform.valid){
+      console.log('Mật khẩu không hợp lệ');
+      return;
+    }
+
+    console.log(this.loginform.value);
+  }
+
+  validate() {
+    return true;
   }
 
 }

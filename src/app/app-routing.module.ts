@@ -6,6 +6,7 @@ import { BookingManagementComponent } from './booking-management/booking-managem
 import { BookingComponent } from './booking/booking.component';
 import { CardComponent } from './card/card.component';
 import { ContractManagementComponent } from './contract-management/contract-management.component';
+import { MainMenuComponent } from './menu/main-menu/main-menu.component';
 import { MyCardComponent } from './my-card/my-card.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'contract-management',
     component: ContractManagementComponent
+  },
+  {
+    path: 'home',
+    component: MainMenuComponent
   },
 ];
 
