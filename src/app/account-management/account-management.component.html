@@ -1,164 +1,190 @@
-<p class="fs-18 font-bold pt-4">
-  <a routerlink="/" class="text-decoration-none color-black" href="">Trang chủ
-  </a> > Quản lý tài khoản
-</p>
+<app-narbar></app-narbar>
 
-<div class="card mt-2r py-2 px-3 border-0 mb-3">
-  <div class="d-flex">
-    <p class="fw-bold mb-2 me-auto">Thông tin cá nhân </p>
+<div class="account-container">
+  <div class="container pb-3 d-flex">
 
-    <a class="color-active text-decoration-none">Chỉnh sửa</a>
-  </div>
-  <hr class="mt-0">
+    <div class="page-menu mt-5">
+      <ul class="mt-2r">
 
-  <form style="width: 960px">
-    <div class="container rounded bg-white mb-2">
-      <div class="row">
+        <li>
+          <a [routerLink]="['/account-management']" routerLinkActive="link-active" class="color-black" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="23.425" height="23.425" viewBox="0 0 23.425 23.425">
+            <path id="ic_account_circle_24px" d="M13.713,2A11.713,11.713,0,1,0,25.425,13.713,11.717,11.717,0,0,0,13.713,2Zm0,3.514A3.514,3.514,0,1,1,10.2,9.028,3.509,3.509,0,0,1,13.713,5.514Zm0,16.632a8.434,8.434,0,0,1-7.028-3.771c.035-2.331,4.685-3.608,7.028-3.608s6.992,1.277,7.028,3.608A8.434,8.434,0,0,1,13.713,22.146Z" transform="translate(-2 -2)" fill="#074494"/>
+          </svg>
+           Quản lý tài khoản
+          </a>
+        </li>
 
-          <div class="col-md-3 border-right">
-              <div class="d-flex flex-column align-items-center">
-                <img class="rounded-circle" width="200px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span> </span></div>
-          </div>
+      </ul>
+    </div>
 
-          <div class="col-md-5 border-right">
-              <div class="p-3 py-2 Profile-form">
+    <div class="font-content">
+      <p class="fs-18 font-bold pt-4">
+        <a [routerLink]="['/home']" class="text-decoration-none color-black" href="">Trang chủ
+        </a> > Quản lý tài khoản
+      </p>
 
-                  <div class="form-group row py-0 profile-detail" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Mã khách hàng:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
+      <div class="card mt-2r py-2 px-3 border-0 mb-3">
+        <div class="d-flex">
+          <p class="fw-bold mb-2 me-auto">Thông tin cá nhân </p>
+
+          <a class="color-active text-decoration-none">Chỉnh sửa</a>
+        </div>
+        <hr class="mt-0">
+
+        <form style="width: 960px">
+          <div class="container rounded bg-white mb-2">
+            <div class="row">
+
+                <div class="col-md-3 border-right">
+                    <div class="d-flex flex-column align-items-center">
+                      <img class="rounded-circle" width="200px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span> </span></div>
+                </div>
+
+                <div class="col-md-5 border-right">
+                    <div class="p-3 py-2 Profile-form">
+
+                        <div class="form-group row py-0 profile-detail" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Mã khách hàng:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Họ và Tên:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Số điện thoại:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Email:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <hr class="hr-1">
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>CMND/CCCD:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Cấp bởi:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Cấp ngày:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <hr class="hr-1">
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Ngày sinh:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Giới tính:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Quốc gia:</b></label>
+                          <div class="col-8">
+                            <select class="form-select" style="width: 400px">
+                              <option selected>/</option>
+                              <option>Việt Nam</option>
+                              <option>Trung Quốc</option>
+                              <option>Nhật bản</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Tỉnh/ TP:</b></label>
+                          <div class="col-8">
+                            <select class="form-select" style="width: 400px">
+                              <option selected>/</option>
+                              <option>Đà Nẵng</option>
+                              <option>Hồ Chí Minh</option>
+                              <option>Hà Nội</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Quận/ huyện:</b></label>
+                          <div class="col-8">
+                            <select class="form-select" style="width: 400px">
+                              <option selected>/</option>
+                              <option>Quận 1</option>
+                              <option>Quận 2</option>
+                              <option>Quận 3</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Hộ khẩu thường trú:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Chổ ở hiện tại:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
+
+                        <div class="form-group row py-1" style="width: 500px">
+                          <label class="col-4 col-form-label"><b>Ngày kích hoạch:</b></label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" value="">
+                          </div>
+                        </div>
                     </div>
+                </div>
+
+                <div class="d-flex">
+                  <div class="ms-auto align-items-center d-flex mt-3 pe-xl-5 pe-lg-3 pe-md-0 pe-sm-0">
+                  <button class="btn btn-circle btn-cbp text-uppercase" tabindex="0">
+                    Đổi mật khẩu</button>
                   </div>
+                </div>
 
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Họ và Tên:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Số điện thoại:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Email:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-
-                  <hr class="hr-1">
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>CMND/CCCD:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Cấp bởi:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Cấp ngày:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-
-                  <hr class="hr-1">
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Ngày sinh:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Giới tính:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Quốc gia:</b></label>
-                    <div class="col-8">
-                      <select class="form-select" style="width: 400px">
-                        <option selected>/</option>
-                        <option>Việt Nam</option>
-                        <option>Trung Quốc</option>
-                        <option>Nhật bản</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Tỉnh/ TP:</b></label>
-                    <div class="col-8">
-                      <select class="form-select" style="width: 400px">
-                        <option selected>/</option>
-                        <option>Đà Nẵng</option>
-                        <option>Hồ Chí Minh</option>
-                        <option>Hà Nội</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Quận/ huyện:</b></label>
-                    <div class="col-8">
-                      <select class="form-select" style="width: 400px">
-                        <option selected>/</option>
-                        <option>Quận 1</option>
-                        <option>Quận 2</option>
-                        <option>Quận 3</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Hộ khẩu thường trú:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Chổ ở hiện tại:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-
-                  <div class="form-group row py-1" style="width: 500px">
-                    <label class="col-4 col-form-label"><b>Ngày kích hoạch:</b></label>
-                    <div class="col-8">
-                      <input type="text" class="form-control" value="">
-                    </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="d-flex">
-            <div class="ms-auto align-items-center d-flex mt-3 pe-xl-5 pe-lg-3 pe-md-0 pe-sm-0">
-            <button class="btn btn-circle btn-cbp text-uppercase" tabindex="0">
-              Đổi mật khẩu</button>
             </div>
           </div>
+        </form>
 
       </div>
     </div>
-  </form>
 
+  </div>
 </div>
 
+<app-footer></app-footer>

@@ -12,7 +12,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 
 const routes: Routes = [
   {
-  path: 'login',
+  path: '',
   component: SignInComponent
   },
   {

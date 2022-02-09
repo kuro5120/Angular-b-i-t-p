@@ -36,6 +36,8 @@ export class SignInComponent implements OnInit {
       return;
     }
 
+    this.router.navigate(['/home'])
+
     console.log(this.loginform.value);
   }
 
